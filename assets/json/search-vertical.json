@@ -1,0 +1,70 @@
+{
+  "pages": [
+    {
+      "name": "Dashboard Analytics",
+      "icon": "bx-home-circle",
+      "url": "dashboards-analytics.html"
+    },
+    {
+      "name": "Atheletes Management",
+      "icon": "bx-run",
+      "url": "athelete-list.html"
+    },
+    {
+      "name": "Register Athelete",
+      "icon": "bx-run",
+      "url": "add-athelete.html"
+    },
+    {
+      "name": "Permisions",
+      "icon": "bx-shield",
+      "url": "admin-list.html"
+    },
+    {
+      "name": "Add Admin",
+      "icon": "bx-user",
+      "url": "add-admin.html"
+    },
+    {
+      "name": "Race Date",
+      "icon": "bx-calendar",
+      "url": "add-race-date.html"
+    },
+    {
+      "name": "Upcoming Race",
+      "icon": "bx-trip",
+      "url": "upcoming-race.html"
+    },
+    {
+      "name": "Sponsors",
+      "icon": "bx-world",
+      "url": "sponsor-list.html"
+    },
+    {
+      "name": "Profile",
+      "icon": "bx-user",
+      "url": "profile.html"
+    },
+    {
+      "name": "Hero",
+      "icon": "bx-layout",
+      "url": "hero.html"
+    },
+    {
+      "name": "Mission Hero",
+      "icon": "bx-layout",
+      "url": "mission.html"
+    },
+    {
+      "name": "Route Hero",
+      "icon": "bx-layout",
+      "url": "route.html"
+    },
+    {
+      "name": "General",
+      "icon": "bx-layout",
+      "url": "general-info.html"
+    }
+  ]
+
+}

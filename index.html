@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style customizer-hide"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template-no-customizer"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Admin Sign In </title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/desktop_header_logo.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+    <!-- Vendor -->
+    <link rel="stylesheet" href="assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+
+    <!-- Page CSS -->
+    <!-- Page -->
+    <link rel="stylesheet" href="assets/vendor/css/pages/page-auth.css" />
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Content -->
+
+    <div class="authentication-wrapper authentication-cover">
+      <div class="authentication-inner row m-0">
+        <!-- /Left Text -->
+        <div class="d-none d-lg-flex col-lg-7 col-xl-8 align-items-center " style="padding: 0;">
+          <div class="w-100 d-flex justify-content-center" style="height: 100%;">
+            <img
+              src="assets/img/backgrounds/image-000.jpg"
+              class="img-fluid"
+              alt="Login image"
+              style="width: 100%;height: 100%;object-fit: cover;"
+              data-app-dark-img="illustrations/boy-with-rocket-dark.png"
+              data-app-light-img="illustrations/boy-with-rocket-light.png"
+            />
+          </div>
+        </div>
+        <!-- /Left Text -->
+
+        <!-- Login -->
+        <div class="d-flex col-12 col-lg-5 col-xl-4 align-items-center authentication-bg p-sm-5 p-4">
+          <div class="w-px-400 mx-auto">
+            <!-- Logo -->
+            <div class="app-brand mb-5">
+              <a href="index.html" class="app-brand-link gap-2">
+                <span class="app-brand-logo demo">
+                  <svg style="width: 100px;height:100px;object-fit:contain;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="574" height="217" xml:space="preserve" version="1.1" viewBox="0 0 574 217">
+                    <image width="100%" height="100%" xlink:href="data:image/png;base64,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"/>
+                  </svg>
+                </span>
+                <span class="app-brand-text demo text-body fw-bolder" style="margin-left: 20px; font-size: 50px !important;">Sign In</span>
+              </a>
+            </div>
+            <!-- <p class="mb-4">Please sign-in to your account and get started</p> -->
+
+            <form id="sign-in" class="mb-3" >
+              <div class="mb-3">
+                <label for="email" class="form-label">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id=""
+                  name="username"
+                  placeholder="Enter your email or username"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-3 form-password-toggle">
+                <div class="d-flex justify-content-between">
+                  <label class="form-label" for="password">Password</label>
+                  <!-- <a href="auth-forgot-password-cover.html">
+                    <small>Forgot Password?</small>
+                  </a> -->
+                </div>
+                <div class="input-group input-group-merge">
+                  <input
+                    type="password"
+                    id="password"
+                    class="form-control"
+                    name="password"
+                    placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                    aria-describedby="password"
+                    autocomplete="new-password"
+                  />
+                  <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                </div>
+              </div>
+              <div style="padding: 10px 0;font-size: 13px;"><span id="err-message" class="text-danger" ></span></div>
+              <!-- <div class="mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="remember-me" />
+                  <label class="form-check-label" for="remember-me"> Remember Me </label>
+                </div>
+              </div> -->
+              <button type="submit" class="btn btn-primary d-grid w-100">Sign in</button>
+            </form>
+
+            <p class="text-center">
+              <span>New on our platform?</span>
+              <a href="auth-register.html">
+                <span>Create an account</span>
+              </a>
+            </p>
+
+          </div>
+        </div>
+        <!-- /Login -->
+      </div>
+    </div>
+
+    <!-- / Content -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sign-in.js"></script>
+  </body>
+</html>

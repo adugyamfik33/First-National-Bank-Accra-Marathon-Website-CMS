@@ -1,0 +1,45 @@
+{
+    "pages": [
+      {
+        "name": "Dashboard Analytics",
+        "icon": "bx-home-circle",
+        "url": "dashboards-analytics.html"
+      },
+      {
+        "name": "Atheletes Management",
+        "icon": "bx-run",
+        "url": "athelete-list.html"
+      },
+      {
+        "name": "Register Athelete",
+        "icon": "bx-run",
+        "url": "add-athelete.html"
+      },
+      {
+        "name": "Add Admin",
+        "icon": "bx-user",
+        "url": "add-admin.html"
+      },
+      {
+        "name": "Race Date",
+        "icon": "bx-calendar",
+        "url": "add-race-date.html"
+      },
+      {
+        "name": "Upcoming Race",
+        "icon": "bx-trip",
+        "url": "upcoming-race.html"
+      },
+      {
+        "name": "Sponsors",
+        "icon": "bx-world",
+        "url": "sponsor-list.html"
+      },
+      {
+        "name": "Profile",
+        "icon": "bx-user",
+        "url": "profile.html"
+      }
+    ]
+  
+  }

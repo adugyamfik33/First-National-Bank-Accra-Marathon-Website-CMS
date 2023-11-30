@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Restricted Access Page</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #1e1e1e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  
+}
+#come-in{
+    animation: bounce-in 2s ease-in-out infinite;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  cursor:default;
+  color: #000;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Slide animation */
+@keyframes slide {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  10% {
+    left: 0;
+    opacity: 1;
+  }
+  90% {
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/* Slide from right */
+p.slide-from-right {
+  animation-name: slide-from-right;
+}
+
+@keyframes slide-from-right {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  10% {
+    right: 0;
+    opacity: 1;
+  }
+  90% {
+    right: 0;
+    opacity: 1;
+  }
+  100% {
+    right: 100%;
+    opacity: 0;
+  }
+}
+
+/* Bounce in animation */
+@keyframes bounce-in {
+    0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Continuous background color animation */
+@keyframes color-change {
+  0% {
+    background-color: #1e1e1e;
+  }
+  25% {
+    background-color: #355070;
+  }
+  50% {
+    background-color: #6d597a;
+  }
+  75% {
+    background-color: #b56576;
+  }
+  100% {
+    background-color: #f6efa6;
+  }
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div id="come-in">
+            <div style="display: flex;width: fit-content;margin:0 auto ;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield-lock" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+                    <circle cx="12" cy="11" r="1" />
+                    <line x1="12" y1="12" x2="12" y2="14.5" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="5" y="11" width="14" height="10" rx="2" />
+                    <circle cx="12" cy="16" r="1" />
+                    <path d="M8 11v-4a4 4 0 0 1 8 0v4" />
+                  </svg>
+            </div>
+          <h1>Restricted Access</h1>
+        </div>
+      <p>You need to be logged in to access this page.</p>
+      <a onclick="request()" class="btn">Go Login</a>
+    </div>
+    <script >
+        function request(){
+            location.replace('./index.html');
+        }
+        // Continuous animation
+        setInterval(function() {
+        var container = document.querySelector('.container');
+        container.style.backgroundColor = randomColor();
+        
+        var p = document.querySelector('p');
+        p.classList.toggle('slide-from-right');
+        }, 10000);
+
+        // Generate random color
+        function randomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        }
+        // Bounce-in animation for h1
+        var h1 = document.querySelector('#come-in');
+        h1.classList.add('bounce-in');
+
+    </script>
+  </body>
+</html>
